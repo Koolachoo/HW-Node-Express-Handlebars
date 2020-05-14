@@ -9,3 +9,4 @@ create table `burgers`(
     primary key (id)
 );
 
+SELECT * FROM `burgers`;

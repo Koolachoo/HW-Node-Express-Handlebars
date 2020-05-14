@@ -1,9 +1,9 @@
 var connection = require("./connection.js");
 
 var orm = {
-    selectall:
-    insertOne:
-    updateOne:
+    selectall: function ()
+    insertOne: function()
+    updateOne: function ()
 }
 
 

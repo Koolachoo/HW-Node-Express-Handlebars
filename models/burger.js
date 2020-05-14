@@ -1,6 +1,6 @@
-var connection = require("./orm.js");
+var connection = require("orm.js");
 
-ver burger = {
+var burger = {
 
 };
 
