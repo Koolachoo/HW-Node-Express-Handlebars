@@ -3,9 +3,9 @@ create database `burgers_db`;
 use `burgers_db`;
 
 create table `burgers`(
-    id INT auto_increment,
-    burger_name VARCHAR(20),
-    devoured boolean DEFAULT TRUE,
+    id INT NOT NULL auto_increment,
+    burger_name VARCHAR(50) NOT NULL,
+    devoured boolean DEFAULT 0,
     primary key (id)
 );
 

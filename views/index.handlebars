@@ -2,15 +2,16 @@
     <div class="row">
         <div class="col-xl-4"></div>
         <div class="col-xl-4">
-            <img src="assets/img/burg.png">
+            <img src="assets/img/burg.png" height="70%" width="70%">
+            <h1>Eat Da Burger</h1>
         </div>
 
         <div class="col-xl-4"></div>
     </div>
     <div class="row">
         <div class="col">
-            <div class="card" style="padding: 20px">
-                <h3 class="card-title">Card title</h3>
+            <div class="card">
+                <h3 class="card-title">Burger Creation</h3>
                 <form class = "add">
                     <label for="exampleFormControlSelect2">Input the burger you want</label>
                     <textarea class="form-control" name="burgerText" rows="2"></textarea>
@@ -21,14 +22,14 @@
         </div>
 
         <div class="col">
-            <div class="card" style="padding: 20px">
-                <h3 class="card-title">Card title</h3>
+            <div class="card">
+                <h3 class="card-title">Burger List</h3>
                 {{#each burger}}
                 {{#unless devoured}}
                 <li>
-                    <div>
+                    <div class = "alert alert-primary">
                         {{this.id}} {{burger_name}}
-                        <button id = {{this.id}} class = "btn btn-primary">Devour Hour</button>
+                        <button id = {{this.id}} class = "btn btn-primary munch">It's Devour Hour</button>
                     </div>
                 </li>
                 {{/unless}}
@@ -38,11 +39,11 @@
 
         <div class="col">
             <div class="card" style="padding: 20px">
-                <h3 class="card-title">Card title</h3>
+                <h3 class="card-title">Eaten Burgers</h3>
                 {{#each burger}}
                 {{#if devoured}}
                 <li>
-                    <div>
+                    <div class = "alert alert-primary">
                         <p>{{this.id}} {{burger_name}}</p>
                     </div>
                 </li>
