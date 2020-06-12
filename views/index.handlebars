@@ -24,7 +24,7 @@
         <div class="col">
             <div class="card">
                 <h3 class="card-title">Burger List</h3>
-                {{#each burger}}
+                {{#each burgers}}
                 {{#unless devoured}}
                 <li>
                     <div class = "alert alert-primary">
@@ -40,7 +40,7 @@
         <div class="col">
             <div class="card" style="padding: 20px">
                 <h3 class="card-title">Eaten Burgers</h3>
-                {{#each burger}}
+                {{#each burgers}}
                 {{#if devoured}}
                 <li>
                     <div class = "alert alert-primary">
